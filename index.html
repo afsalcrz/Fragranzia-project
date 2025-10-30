@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+    }
+
+    .top {
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+
+    }
+
+    .topf h3 {
+      margin-right: 390px;
+      font-size: 30px;
+      color: #00354B;
+      letter-spacing: 4%;
+      font-weight: 700;
+
+    }
+
+    .tope {
+      display: flex;
+
+      gap: 20px;
+
+
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+      list-style-type: none;
+
+
+      align-items: center;
+
+    }
+
+    li a {
+      text-decoration: none;
+
+      font-weight: 400;
+      color: #000000CC;
+
+
+      text-align: center;
+
+    }
+
+    .home a {
+      color: #00354B;
+
+      font-weight: 600;
+
+
+    }
+
+    .tope button {
+      border-radius: 50px;
+      color: #00354B;
+      background-color: #FFFFFF;
+      width: 200px;
+      padding-right: 50px;
+      margin-top: -5px;
+      height: 5vh;
+      box-shadow: 0px 0px 4px #00000040;
+      border: none;
+    }
+
+    .tope i {
+      color: #000000;
+
+      font-size: 15px;
+      text-shadow: 0 0 1px black;
+    }
+
+    .cart a {
+      display: flex;
+      background-color: #FFFFFF;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 4px #00000040;
+      border-radius: 50px;
+      height: 35px;
+      width: 35px;
+      margin-top: -5px;
+
+    }
+
+    .person {
+      display: flex;
+      background-color: #FFFFFF;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 4px #00000040;
+      border-radius: 50px;
+      height: 35px;
+      width: 35px;
+      margin-top: -5px;
+
+    }
+
+    .bell {
+      display: flex;
+      background-color: #FFFFFF;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 4px #00000040;
+      border-radius: 50px;
+      height: 35px;
+      width: 35px;
+      margin-top: -5px;
+
+    }
+
+    .head {
+      background-color: #00354B;
+      color: #FFFFFF;
+      text-align: center;
+      max-width: 1960px;
+      height: 5vh;
+      margin-top: 20px;
+      padding-top: 10px;
+      letter-spacing: 2px;
+
+
+
+
+
+
+    }
+
+    .headf {
+      max-width: 1400px;
+      height: 450px;
+      background: linear-gradient(90deg, #00354B 0%, #295162 84.82%, #2C5363 100%);
+
+      opacity: 1;
+      border-radius: 20px;
+      margin-left: 60px;
+      position: relative;
+
+    }
+
+    .of{
+      background: linear-gradient(90deg, #C47400 0%, #BE8736 100%);
+ max-width: 1400px;
+      height: 450px;
+     
+      opacity: 1;
+      border-radius: 20px;
+      margin-left:100px;
+      position: relative;
+
+    }
+
+    .bg img {
+      width: 1400px;
+      height: 35vh;
+      opacity: 30%;
+      position: absolute;
+      margin-top: 190px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      filter: brightness(0) saturate(100%);
+      background: linear-gradient(90deg, #00354B 0%, #295162 84.82%, #2C5363 100%);
+      -webkit-background-clip: text;
+      z-index: 1;
+      overflow: hidden;
+
+
+    }
+     .orange img {
+      width: 1400px;
+      height: 35vh;
+      opacity: 30%;
+      position: absolute;
+      margin-top: 190px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      filter: brightness(0) saturate(100%);
+      background: linear-gradient(90deg, #00354B 0%, #295162 84.82%, #2C5363 100%);
+      -webkit-background-clip: text;
+      z-index: 1;
+      overflow: hidden;
+
+
+    }
+
+
+
+    .lr {
+      display: flex;
+      color: white;
+      position: relative;
+      /* was absolute, now relative */
+      z-index: 2;
+
+      gap: 50px;
+      /* space between hleft and hright */
+    }
+
+    .hleft {
+      max-width: 600px;
+      padding-left: 80px;
+      padding-top: 50px;
+
+    }
+
+    .hleft h2,
+    .hleft p {
+      color: white;
+
+
+    }
+
+
+
+    .hright img {
+
+
+      margin-top: 40px;
+
+    }
+
+    .hleft button {
+      margin-top: 20px;
+      border-radius: 5px;
+      padding: 10px 25px;
+      border: none;
+      background-color: #FFFFFF;
+      color: #00354B;
+      font-weight: 600;
+    }
+
+    .r1 img {
+      width: 35%;
+      transform: rotate(-20deg);
+      position: relative;
+      margin-left: 350px;
+
+
+    }
+
+    .r2 img {
+      width: 20%;
+      transform: rotate(20deg);
+      margin-left: 500px;
+      position: absolute;
+      margin-top: -290px;
+    }
+    .lefto img {
+      width: 55%;
+      transform: rotate(-20deg);
+      position: relative;
+      margin-left: 110px;
+margin-top: 50px;
+ 
+    }
+
+    .righto img {
+      width: 20%;
+      transform: rotate(20deg);
+      margin-left: 255px;
+      position: absolute;
+      margin-top: -300px;
+    }
+
+   
+    
+    
+    
+
+    .offer {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .off1 {
+      display: flex;
+      background-color: #ECECEC;
+      width: 30%;
+      height: 35vh;
+
+      opacity: 1;
+      border-radius: 20px;
+
+    }
+
+    .off11 {
+      padding-left: 40px;
+      padding-top: 40px;
+    }
+
+    .off1 img {
+      width: 55%;
+      border-radius: 20px;
+    }
+
+    .off2 {
+      display: flex;
+      background-color: #ECECEC;
+      width: 30%;
+      height: 35vh;
+      opacity: 1;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      /* ✅ keeps the image inside */
+    }
+
+    .off22 {
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .off22 img {
+      width: 60%;
+      position: absolute;
+      bottom: -30px;
+      /* ✅ half inside, half outside */
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      margin-bottom: -50px;
+    }
+
+    .off3 {
+      display: flex;
+      background-color: #ECECEC;
+      width: 30%;
+      height: 35vh;
+      position: relative;
+      opacity: 1;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .off3 img {
+      transform: rotate(20deg);
+      width: 60%;
+      position: absolute;
+      margin-left: 180px;
+      bottom: -30px;
+      z-index: 1;
+      margin-bottom: -40px;
+
+    }
+
+    .off33 h3 {
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+
+    .star {
+      width: 50%;
+      margin-top: 30px;
+      transform: rotate(-20deg);
+      margin-left: 30px;
+      position: relative;
+
+    }
+
+    .off33 h5 {
+      margin-top: -80px;
+      margin-left: 70px;
+      position: absolute;
+      z-index: 1;
+      transform: rotate(-20deg);
+      color: #ECECEC;
+    }
+
+    .service {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      border: none;
+      max-width: 80%;
+      margin-left: 150px;
+      border-radius: 15px;
+      box-shadow: 0px 0px 4px #00000040;
+
+    }
+
+    .service i {
+      font-size: 40px;
+
+      color: #000000;
+
+
+    }
+
+    .delivery {
+      display: flex;
+      gap: 30px;
+      padding-top: 20px;
+    }
+
+    .secure {
+      display: flex;
+      gap: 30px;
+      padding-top: 20px;
+    }
+
+    .customer {
+      display: flex;
+      gap: 30px;
+      padding-top: 20px;
+    }
+
+    .tp h4 p {
+      font-size: 20px;
+    }
+
+    .sp h4 {
+      font-size: 20px;
+    }
+
+    .cp h4 {
+      font-size: 20px;
+    }
+
+    .support {
+      margin-top: 20px;
+    }
+
+    .shield {
+      margin-top: 20px;
+    }
+
+    .truck {
+      margin-top: 20px;
+    }
+
+    .c2,
+    .c3,
+    .c4,
+    .c5,
+    .c6 {
+      position: relative;
+      /* keep stars and labels fixed */
+      flex: 0 0 auto;
+      /* prevent shrinking in horizontal scroll */
+      overflow: hidden;
+      /* ensures zoom stays inside */
+      border-radius: 20px;
+    }
+
+
+    .c1 {
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      /* heading left, arrows right */
+      align-items: center;
+      background-color: white;
+      /* optional to overlay on images */
+      padding: 10px 0;
+      z-index: 10;
+    }
+
+    .cicon i {
+      font-size: 30px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    .c1 h4 {
+
+      top: 0;
+      margin-left: 10px;
+
+
+    }
+
+    .coll {
+      display: flex;
+      gap: 50px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding-bottom: 20px;
+    }
+
+    .coll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .red img {
+      width: 100%;
+      background-color: white;
+      border-bottom-right-radius: 90px;
+      border-top-left-radius: 90px;
+      box-shadow: 0px 0px 4px #00000040;
+      height: 40vh;
+      position: relative;
+    }
+
+    .redstar {
+      position: absolute;
+      /* relative to .c2/.c3/.c4 etc. */
+      width: 20%;
+      /* adjust as needed */
+      top: 10px;
+      /* distance from top of image */
+      left: 30px;
+      /* distance from left of image */
+      transform: rotate(-20deg);
+      z-index: 2;
+    }
+
+    .st {
+      position: absolute;
+      /* relative to .c2/.c3/.c4 etc. */
+
+      margin-top: -250px;
+      color: white;
+      margin-left: 30px;
+      display: flex;
+      font-weight: 600;
+      transform: rotate(-40deg);
+      z-index: 2;
+    }
+
+    .para1 {
+      font-weight: 600;
+
+    }
+
+
+    .para3 {
+      text-decoration: line-through;
+      font-size: 15px;
+      padding-left: 10px;
+      color: #979393;
+    }
+
+    .c2 button {
+      width: 100%;
+      height: 5vh;
+      background-color: #00354B;
+      border-radius: 5px;
+
+    }
+
+    .c2 button a {
+
+      text-decoration: none;
+      color: #FFFFFF;
+
+    }
+
+    .para2 strong {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .black img {
+      width: 100%;
+      background-color: white;
+      border-bottom-right-radius: 90px;
+      border-top-left-radius: 90px;
+      box-shadow: 0px 0px 4px #00000040;
+      height: 40vh;
+      position: relative;
+    }
+
+    .c3 button {
+      width: 100%;
+      height: 5vh;
+      background-color: #00354B;
+      border-radius: 5px;
+
+    }
+
+    .c3 button a {
+
+      text-decoration: none;
+      color: #FFFFFF;
+
+    }
+
+    .brown img {
+      width: 100%;
+      background-color: white;
+      border-bottom-right-radius: 90px;
+      border-top-left-radius: 90px;
+      box-shadow: 0px 0px 4px #00000040;
+      height: 40vh;
+      position: relative;
+    }
+
+    .c4 button {
+      width: 100%;
+      height: 5vh;
+      background-color: #00354B;
+      border-radius: 5px;
+
+    }
+
+    .c4 button a {
+
+      text-decoration: none;
+      color: #FFFFFF;
+
+    }
+
+    .blue img {
+      width: 100%;
+      background-color: white;
+      border-bottom-right-radius: 90px;
+      border-top-left-radius: 90px;
+      box-shadow: 0px 0px 4px #00000040;
+      height: 40vh;
+      position: relative;
+    }
+
+    .c5 button {
+      width: 100%;
+      height: 5vh;
+      background-color: #00354B;
+      border-radius: 5px;
+
+    }
+
+    .c5 button a {
+
+      text-decoration: none;
+      color: #FFFFFF;
+
+    }
+
+    .coffee img {
+      width: 100%;
+      background-color: white;
+      border-bottom-right-radius: 90px;
+      border-top-left-radius: 90px;
+      box-shadow: 0px 0px 4px #00000040;
+      height: 40vh;
+      position: relative;
+
+    }
+
+    .c6 button {
+      width: 100%;
+      height: 5vh;
+      background-color: #00354B;
+      border-radius: 5px;
+
+    }
+
+    .c6 button a {
+
+      text-decoration: none;
+      color: #FFFFFF;
+
+    }
+
+    .c6 {
+      margin-right: -8500px;
+    }
+
+    .coll img {
+      transition: border-radius 0.5s, transform 0.5s;
+      /* smooth hover */
+    }
+
+    .coll img:hover {
+      border-top-left-radius: 0;
+      border-top-right-radius: 90px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 90px;
+      transform: scale(1.05);
+      /* optional: slight zoom on hover */
+    }
+
+    .art {
+      font-size: 18px;
+    }
+
+    .new {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-left: 200px;
+      overflow: hidden;
+      width: 70%;
+      border-radius: 10px;
+      gap: 20px;
+    }
+
+    .new img {
+      width: 100%;
+      transition: transform 0.4s ease, width 0.4s ease;
+      filter: brightness(55%);
+      border-radius: 10px;
+      flex: 1;
+      /* Make images flexible inside the container */
+      max-width: 100%;
+    }
+
+    /* Hovered image grows slightly */
+    .new img:hover {
+      transform: scale(1.05);
+      z-index: 1;
+    }
+
+    /* Only images to the right of the hovered image will shrink */
+    .new:hover img {
+      transform: scale(0.95);
+    }
+
+    /* Hovered image overrides the shrink effect */
+    .new img:hover {
+      transform: scale(1.15);
+    }
+
+    .new p {
+      position: absolute;
+      margin-top: -150px;
+      color: #ECECEC;
+      transform: rotate(-90deg);
+      margin-left: -60px;
+      font-size: 30px;
+      font-weight: 700;
+      z-index: 2;
+    }
+
+    .explore img {
+      width: 65%;
+      background-color: #FFFFFF;
+      box-shadow: 0px 0px 4px #00000040;
+      border-radius: 50%;
+
+
+
+
+    }
+
+    .explore {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-right: 50px;
+      margin-top: -50px;
+    }
+
+    .ex2 img {
+      width: 40%;
+     
+
+    }
+
+
+
+    .ex3 img {
+      width: 40%;
+    }
+
+    .ex1 {
+      display: flex;
+      gap: 1100px;
+      margin-left: 40px;
+    }
+
+    .ex1 h4 {
+      font-weight: bold;
+    }
+   .bot {
+  display: flex;
+  align-items: center; /* vertically center content */
+  justify-content: space-between; /* space between text and image */
+  max-width: 80%;
+  height: 35vh;
+background: linear-gradient(8.44deg, #D0F7FB 8.73%, #C4F1FA 59.98%, #B3EDF8 93.78%);
+  margin-left: 150px;
+  position: relative;
+ 
+  overflow: hidden; /* ensures rotated bottle stays inside */
+}
+
+.b1 {
+  z-index: 2;
+}
+
+.bottle img {
+ 
+   width: 100%;
+  height:100vh;
+ margin-top: -50px;
+object-fit: contain;
+  z-index: 1;
+  margin-right:-150px;
+transform: rotate(30deg);
+
+
+ 
+ 
+}
+
+.b1 button{
+   background: rgba(0, 53, 75, 1);
+color: white;
+height: 6vh;
+width: 30%;
+border-radius: 5px;
+}
+
+.b1 h3{
+  font-weight: bold;
+}
+.footer{
+  display: flex;
+  gap: 50px;
+  background: rgba(139, 184, 190, 1);
+border-bottom: 2px solid black;
+height: 45vh;
+}
+.f1{
+  display: flex;
+  gap: 80px;
+  width: 40%;
+} 
+
+.footer h2{
+  color: rgba(0, 53, 75, 1);
+  font-weight: 800;
+ padding-top: 90px;
+ width: 60%;
+ padding-left: 50px;
+ 
+
+}
+.footer h5{
+  font-weight: bold;
+  font-size: 20px;
+}
+.footer p{
+  font-weight:400;
+}
+.f5{
+  display: flex;
+   background: rgba(139, 184, 190, 1);
+   gap: 590px;
+   padding-top: 10px;
+   height: 10vh;
+}
+.f6 p{
+  padding-top: 10px;
+}
+.slide {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.slide-inner {
+  display: flex;
+  width: 200%;                 /* 2 slides side by side */
+  height: 100%;
+  animation: slideMove 10s infinite;
+}
+
+.headf, .of {
+  width: 50%;                  /* since .slide-inner is 200% */
+  height: 100%;
+  flex-shrink: 0;
+}
+
+
+/* Animation to move horizontally */
+@keyframes slideMove {
+  0% { transform: translateX(0); }
+  40% { transform: translateX(0); }
+  50% { transform: translateX(-50%); }
+  90% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+ 
+  z-index: 10;
+}
+
+.dots i {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s;
+  
+}
+
+.dots i.active {
+  color: #fff;
+
+}
+.odts {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+ 
+  z-index: 10;
+}
+.odts  {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s;
+padding-left: 80px;
+}
+
+.odts i.active {
+  color: #fff;
+  
+  margin-right: 100px;
+}
+
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="top">
+
+    <div class="topf">
+      <h3>Fragranzia</h3>
+    </div>
+
+    <div class="tope">
+      <ul>
+        <li class="home"><a href="#">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="">Gifting</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+
+      <button><i class="bi bi-search"></i> &nbsp; Search Here </button>
+
+      <div class="cart">
+        <a href="cart.html"><i class="bi bi-cart3"></i></a>
+      </div>
+      <div class="bell">
+        <i class="bi bi-bell"></i>
+      </div>
+      <div class="person">
+        <i class="bi bi-person"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="head">
+    <h6>ENJOY FESTIVE DISCOUNTS! FREE SHIPPING ABOVE 999!</h6>
+  </div>
+
+<div class="slide">
+  <div class="slide-inner">
+
+    <!-- First Slide -->
+    <div class="headf mt-3">
+      <div class="bg">
+        <img src="bg.png" alt="">
+      </div>
+      <div class="lr">
+        <div class="hleft">
+          <h2>Discover perfumes that celebrate individuality</h2>
+          <p>Every moment with an unforgettable essence.</p>
+          <button>Shop Now</button>
+        </div>
+        <div class="hright">
+          <div class="r1"><img src="pe1.png" alt=""></div>
+          <div class="r2"><img src="pe2.png" alt=""></div>
+        </div>
+      </div>
+      <div class="odts">
+          <i class="bi bi-dot"></i>
+        <i class="bi bi-dot active"></i>
+      
+      </div>
+    </div>
+
+    <!-- Second Slide -->
+    <div class="of mt-3">
+      <div class="orange">
+        <img src="orange.png" alt="">
+      </div>
+      <div class="lr">
+        <div class="hleft">
+          <h2>Discover perfumes that celebrate individuality</h2>
+          <p>Every moment with an unforgettable essence.</p>
+          <button>Shop Now</button>
+        </div>
+        <div class="hright">
+          <div class="lefto"><img src="left.png" alt=""></div>
+          <div class="righto"><img src="right.png" alt=""></div>
+        </div>
+      </div>
+      <div class="dots">
+        <i class="bi bi-dot"></i>
+        <i class="bi bi-dot active"></i>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <div class="offer mt-5">
+    <div class="off1">
+      <div class="off11">
+        <h3>Unlock Exclusive <br>Offers</h3>
+        <p>Discover special deals <br> tailored just for you!</p>
+      </div>
+      <img src="a1.jpg" alt="">
+
+    </div>
+
+    <div class="off2">
+      <div class="off22">
+        <h3>Gift a Scents to your loved one. </h3>
+        <p>Make your love more beautiful</p>
+        <img src="a2.png" alt="">
+      </div>
+
+    </div>
+    <div class="off3">
+      <div class="off33">
+        <h3>Luxury Scents <br> Starting at ₹4,000</h3>
+        <svg class="star" width="120" height="122" viewBox="0 0 120 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.97379 48.8389C-1.90111 39.0903 3.34802 28.1069 13.3674 24.9986L19.1932 23.1913C23.5465 21.8408 27.2253 18.889 29.4872 14.9319L32.5141 9.63624C37.7199 0.52856 49.5798 -2.21555 58.257 3.67995L63.3024 7.1079C67.0724 9.6694 71.6739 10.7053 76.1779 10.0064L82.2055 9.07114C92.5719 7.46264 102.112 15.0242 102.913 25.4841L103.378 31.566C103.726 36.1106 105.785 40.3541 109.14 43.4397L113.629 47.5691C121.35 54.6711 121.387 66.8443 113.708 73.992L109.243 78.1481C105.907 81.2537 103.873 85.5093 103.552 90.0559L103.123 96.1404C102.384 106.605 92.8895 114.223 82.5137 112.676L76.4807 111.777C71.9726 111.105 67.3773 112.168 63.6226 114.752L58.5977 118.21C49.9558 124.157 38.0797 121.483 32.8198 112.407L29.7614 107.129C27.4761 103.186 23.7798 100.256 19.4185 98.9313L13.5821 97.1587C3.54437 94.1101 -1.77003 83.1581 2.04681 73.3866L4.26612 67.705C5.92448 63.4594 5.91045 58.7428 4.22686 54.5072L1.97379 48.8389Z"
+            fill="#00354B" />
+        </svg>
+        <h5>Shop<br>Now</h5>
+      </div>
+
+
+
+
+
+
+      <img src="a3.png" alt="">
+
+
+    </div>
+  </div>
+
+
+  <div class=" mt-5 service">
+
+    <div class="delivery">
+      <div class="truck">
+        <i class="bi bi-truck"></i>
+      </div>
+      <div class="tp">
+        <h4>Fast & Reliable Delivery</h4>
+        <p>Get your orders delivered on <br> time, every time.</p>
+      </div>
+
+    </div>
+    <div class="secure">
+      <div class="shield">
+        <i class="bi bi-shield-check"></i>
+      </div>
+      <div class="sp">
+        <h4>Secure Payments</h4>
+        <p>Shop with confidence using our <br> encrypted payment gateways.</p>
+      </div>
+
+    </div>
+    <div class="customer">
+      <div class="support">
+        <i class="bi bi-person-arms-up"></i>
+      </div>
+      <div class="cp">
+        <h4>24/7 Customer Support</h4>
+        <p>We’re here to assist you anytime, <br> anywhere.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="collection mt-5 p-5">
+
+    <div class="c1">
+      <h4>Featured Collections</h4>
+      <div class="cicon">
+        <i class="bi bi-arrow-left-circle"></i>
+        <i class="bi bi-arrow-right-circle"></i>
+      </div>
+    </div>
+
+    <div class="coll">
+
+      <div class="c2 mt-2 p-2">
+        <div class="red">
+          <img src="red.png" alt="">
+          <svg class="redstar" width="120" height="122" viewBox="0 0 120 122" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+
+            <g transform="rotate(0, 60, 61)" id="starGroup">
+              <path
+                d="M1.97379 48.8389C-1.90111 39.0903 3.34802 28.1069 13.3674 24.9986L19.1932 23.1913C23.5465 21.8408 27.2253 18.889 29.4872 14.9319L32.5141 9.63624C37.7199 0.52856 49.5798 -2.21555 58.257 3.67995L63.3024 7.1079C67.0724 9.6694 71.6739 10.7053 76.1779 10.0064L82.2055 9.07114C92.5719 7.46264 102.112 15.0242 102.913 25.4841L103.378 31.566C103.726 36.1106 105.785 40.3541 109.14 43.4397L113.629 47.5691C121.35 54.6711 121.387 66.8443 113.708 73.992L109.243 78.1481C105.907 81.2537 103.873 85.5093 103.552 90.0559L103.123 96.1404C102.384 106.605 92.8895 114.223 82.5137 112.676L76.4807 111.777C71.9726 111.105 67.3773 112.168 63.6226 114.752L58.5977 118.21C49.9558 124.157 38.0797 121.483 32.8198 112.407L29.7614 107.129C27.4761 103.186 23.7798 100.256 19.4185 98.9313L13.5821 97.1587C3.54437 94.1101 -1.77003 83.1581 2.04681 73.3866L4.26612 67.705C5.92448 63.4594 5.91045 58.7428 4.22686 54.5072L1.97379 48.8389Z"
+                fill="#00354B" />
+
+          </svg>
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Autograph eau de parfum 100ml <br> for men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button class="a text-white" onclick="window.location.href='purchase.html'">Add to Cart</button>
+
+      </div>
+
+      <div class="c3 mt-2 p-2">
+        <div class="black">
+          <img src="black.jpg" alt="">
+          <svg class="redstar" width="120" height="122" viewBox="0 0 120 122" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+
+            <g transform="rotate(0, 60, 61)" id="starGroup">
+              <path
+                d="M1.97379 48.8389C-1.90111 39.0903 3.34802 28.1069 13.3674 24.9986L19.1932 23.1913C23.5465 21.8408 27.2253 18.889 29.4872 14.9319L32.5141 9.63624C37.7199 0.52856 49.5798 -2.21555 58.257 3.67995L63.3024 7.1079C67.0724 9.6694 71.6739 10.7053 76.1779 10.0064L82.2055 9.07114C92.5719 7.46264 102.112 15.0242 102.913 25.4841L103.378 31.566C103.726 36.1106 105.785 40.3541 109.14 43.4397L113.629 47.5691C121.35 54.6711 121.387 66.8443 113.708 73.992L109.243 78.1481C105.907 81.2537 103.873 85.5093 103.552 90.0559L103.123 96.1404C102.384 106.605 92.8895 114.223 82.5137 112.676L76.4807 111.777C71.9726 111.105 67.3773 112.168 63.6226 114.752L58.5977 118.21C49.9558 124.157 38.0797 121.483 32.8198 112.407L29.7614 107.129C27.4761 103.186 23.7798 100.256 19.4185 98.9313L13.5821 97.1587C3.54437 94.1101 -1.77003 83.1581 2.04681 73.3866L4.26612 67.705C5.92448 63.4594 5.91045 58.7428 4.22686 54.5072L1.97379 48.8389Z"
+                fill="#00354B" />
+
+          </svg>
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Kyros Eau De Parfum 100ml <br>for Men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button><a href="#">Add to Cart</a></button>
+
+      </div>
+
+
+      <div class="c4 mt-2 p-2">
+        <div class="brown">
+          <img src="brown.jpg" alt="">
+          <svg class="redstar" width="120" height="122" viewBox="0 0 120 122" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+
+            <g transform="rotate(0, 60, 61)" id="starGroup">
+              <path
+                d="M1.97379 48.8389C-1.90111 39.0903 3.34802 28.1069 13.3674 24.9986L19.1932 23.1913C23.5465 21.8408 27.2253 18.889 29.4872 14.9319L32.5141 9.63624C37.7199 0.52856 49.5798 -2.21555 58.257 3.67995L63.3024 7.1079C67.0724 9.6694 71.6739 10.7053 76.1779 10.0064L82.2055 9.07114C92.5719 7.46264 102.112 15.0242 102.913 25.4841L103.378 31.566C103.726 36.1106 105.785 40.3541 109.14 43.4397L113.629 47.5691C121.35 54.6711 121.387 66.8443 113.708 73.992L109.243 78.1481C105.907 81.2537 103.873 85.5093 103.552 90.0559L103.123 96.1404C102.384 106.605 92.8895 114.223 82.5137 112.676L76.4807 111.777C71.9726 111.105 67.3773 112.168 63.6226 114.752L58.5977 118.21C49.9558 124.157 38.0797 121.483 32.8198 112.407L29.7614 107.129C27.4761 103.186 23.7798 100.256 19.4185 98.9313L13.5821 97.1587C3.54437 94.1101 -1.77003 83.1581 2.04681 73.3866L4.26612 67.705C5.92448 63.4594 5.91045 58.7428 4.22686 54.5072L1.97379 48.8389Z"
+                fill="#00354B" />
+
+          </svg>
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Autograph eau de parfum 100ml <br> for men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button><a href="#">Add to Cart</a></button>
+
+      </div>
+      <div class="c5 mt-2 p-2">
+        <div class="blue">
+          <img src="blue.jpg" alt="">
+          <svg class="redstar" width="120" height="122" viewBox="0 0 120 122" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+
+            <g transform="rotate(0, 60, 61)" id="starGroup">
+              <path
+                d="M1.97379 48.8389C-1.90111 39.0903 3.34802 28.1069 13.3674 24.9986L19.1932 23.1913C23.5465 21.8408 27.2253 18.889 29.4872 14.9319L32.5141 9.63624C37.7199 0.52856 49.5798 -2.21555 58.257 3.67995L63.3024 7.1079C67.0724 9.6694 71.6739 10.7053 76.1779 10.0064L82.2055 9.07114C92.5719 7.46264 102.112 15.0242 102.913 25.4841L103.378 31.566C103.726 36.1106 105.785 40.3541 109.14 43.4397L113.629 47.5691C121.35 54.6711 121.387 66.8443 113.708 73.992L109.243 78.1481C105.907 81.2537 103.873 85.5093 103.552 90.0559L103.123 96.1404C102.384 106.605 92.8895 114.223 82.5137 112.676L76.4807 111.777C71.9726 111.105 67.3773 112.168 63.6226 114.752L58.5977 118.21C49.9558 124.157 38.0797 121.483 32.8198 112.407L29.7614 107.129C27.4761 103.186 23.7798 100.256 19.4185 98.9313L13.5821 97.1587C3.54437 94.1101 -1.77003 83.1581 2.04681 73.3866L4.26612 67.705C5.92448 63.4594 5.91045 58.7428 4.22686 54.5072L1.97379 48.8389Z"
+                fill="#00354B" />
+
+          </svg>
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Royal eau de parfum 100ml <br>for men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button><a href="#">Add to Cart</a></button>
+
+      </div>
+      <div class="c6 mt-2 p-2">
+        <div class="coffee">
+          <img src="coffee.jpg" alt="">
+          <svg class="redstar" width="120" height="122" viewBox="0 0 120 122" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+
+            <g transform="rotate(0, 60, 61)" id="starGroup">
+              <path
+                d="M1.97379 48.8389C-1.90111 39.0903 3.34802 28.1069 13.3674 24.9986L19.1932 23.1913C23.5465 21.8408 27.2253 18.889 29.4872 14.9319L32.5141 9.63624C37.7199 0.52856 49.5798 -2.21555 58.257 3.67995L63.3024 7.1079C67.0724 9.6694 71.6739 10.7053 76.1779 10.0064L82.2055 9.07114C92.5719 7.46264 102.112 15.0242 102.913 25.4841L103.378 31.566C103.726 36.1106 105.785 40.3541 109.14 43.4397L113.629 47.5691C121.35 54.6711 121.387 66.8443 113.708 73.992L109.243 78.1481C105.907 81.2537 103.873 85.5093 103.552 90.0559L103.123 96.1404C102.384 106.605 92.8895 114.223 82.5137 112.676L76.4807 111.777C71.9726 111.105 67.3773 112.168 63.6226 114.752L58.5977 118.21C49.9558 124.157 38.0797 121.483 32.8198 112.407L29.7614 107.129C27.4761 103.186 23.7798 100.256 19.4185 98.9313L13.5821 97.1587C3.54437 94.1101 -1.77003 83.1581 2.04681 73.3866L4.26612 67.705C5.92448 63.4594 5.91045 58.7428 4.22686 54.5072L1.97379 48.8389Z"
+                fill="#00354B" />
+
+          </svg>
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Royal eau de parfum 100ml <br>for men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button><a href="#">Add to Cart</a></button>
+
+      </div>
+    </div>
+
+    <p class="mt-5 text-center art">"It's an art. A craft. A science. At Fragranzia, we're in <br> the business of
+      creating memories that last forever <br>through our fragrances."</p>
+
+  </div>
+
+
+  <div class="new ">
+
+    <div class="new1">
+      <img src="new1.jpg" alt="">
+      <p>New Arrivals</p>
+    </div>
+    <div class="new2">
+      <img src="new2.jpg" alt="">
+      <p>Limited Edition</p>
+    </div>
+    <div class="new3">
+      <img src="new3.jpg" alt="">
+      <p>Best Sellers</p>
+    </div>
+  </div>
+
+  <div class="ex1 mt-5 p-5">
+    <h4>Explore Categories</h4>
+    <p><u>See All</u></p>
+  </div>
+  <div class="explore p-5">
+
+
+    <div class="ex2">
+      <img src="ex2.jpg" alt="">
+      <p>Eau De Parfum</p>
+    </div>
+    <div class="ex3">
+      <img src="ex3.png" alt="">
+      <p>Concentrated</p>
+    </div>
+    <div class="ex4">
+      <img src="ex4.png" alt="">
+      <p>Deodorants</p>
+    </div>
+    <div class="ex5">
+      <img src="ex5.png" alt="">
+      <p>Body Mist</p>
+    </div>
+    <div class="ex6">
+      <img src="ex6.png" alt="">
+      <p>Combo</p>
+    </div>
+  </div>
+
+ <div class="collection mt-2 p-5">
+
+    <div class="c1">
+      <h4>Offer Zone</h4>
+      <div class="cicon">
+        <i class="bi bi-arrow-left-circle"></i>
+        <i class="bi bi-arrow-right-circle"></i>
+      </div>
+    </div>
+
+    <div class="coll">
+
+       <div class="c5 mt-2 p-2">
+        <div class="blue">
+          <img src="blue.jpg" alt="">
+        
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Royal eau de parfum 100ml <br>for men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button><a href="#">Add to Cart</a></button>
+
+      </div>
+
+      <div class="c3 mt-2 p-2">
+        <div class="black">
+          <img src="black.jpg" alt="">
+         
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Kyros Eau De Parfum 100ml <br>for Men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button><a href="#">Add to Cart</a></button>
+
+      </div>
+
+
+      <div class="c2 mt-2 p-2">
+        <div class="red">
+          <img src="coffee.jpg" alt="">
+         
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Royal eau de parfum 100ml <br>for men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button><a href="#">Add to Cart</a></button>
+
+      </div>
+      <div class="c4 mt-2 p-2">
+        <div class="brown">
+          <img src="brown.jpg" alt="">
+         
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Autograph eau de parfum 100ml <br> for men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button><a href="#">Add to Cart</a></button>
+
+      </div>
+      <div class="c6 mt-2 p-2">
+        <div class="coffee">
+          <img src="red.png" alt="">
+          
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Autograph eau de parfum 100ml <br> for men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button><a href="purchase.html">Add to Cart</a></button>
+
+      </div>
+    </div>
+
+    
+
+  </div>
+
+  <div class="bot mt-5 p-5">
+
+<div class="b1">
+  <h3>Elegance in Every Bottle</h3>
+  <p>Discover timeless fragrances crafted for every moment</p>
+  <button>Shop Now</button>
+</div>
+<div class="bottle">
+  <img src="bottle.jpg" alt="">
+</div>
+  </div>
+
+
+  <div class="footer mt-5 p-5">
+
+<h2>Fragranzia</h2>
+
+<div class="f1">
+
+  <div class="f2">
+    <h5>pages</h5>
+
+  <p>Home</p>
+  <p>Products</p>
+  <p>Gifting</p>
+  <p>About</p>
+  <p>Profile</p>
+  </div>
+
+   <div class="f3">
+    <h5>Quick Links</h5>
+
+  <p>Privacy Policy</p>
+  <p>Terms and <br>Conditions</p>
+  <p>FAQs</p>
+  <p>Customer <br>Service</p>
+  <p>Profile</p>
+  </div>
+
+  <div class="f4">
+
+    <p><i class="bi bi-envelope"></i> ftrafurniture@gmail.com</p>
+    <p><i class="bi bi-telephone"></i> +91 9876543210</p>
+    <h5>Social Media</h5>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-twitter-x"></i>
+    <i class="bi bi-youtube"></i>
+    <i class="bi bi-linkedin"></i>
+  </div>
+</div>
+
+
+  </div>
+<div class="f5">
+  <ul>
+    <li>Web Accessiblity |</li>
+    <li>Terms Of Use |</li>
+    <li>Privacy statement |</li>
+    <li>Contact Us</li>
+     </ul>
+
+     <div class="f6">
+      <p>© 2024 fragranzia Company. All rights reserved.</p>
+     </div>
+</div>
+
+
+</body>
+
+</html>

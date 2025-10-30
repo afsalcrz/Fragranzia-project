@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <style>
+        .main {
+
+            display: flex;
+        }
+
+       .first img {
+  width: 150%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  height: 60vh;
+  position: relative;
+  filter: brightness(35%); /* makes the image darker, like opacity */
+}
+
+.fi {
+
+    position: absolute;
+    margin-top: -290px;
+    color: aliceblue;
+    margin-left: 90px;
+    text-align: center;
+    z-index:1;
+   
+}
+
+
+        .first{
+
+          
+            margin-left:290px;
+           margin-top: 100px;
+           
+        }
+        .second{
+            margin-left: 350px;
+            margin-top: 90px;
+            position: relative;
+        }
+
+        .but{
+            display: flex;
+       
+   
+            margin-top: 20px;
+           gap:100px;
+           justify-content: center;
+           align-items: center;
+               margin-right: 100px;
+                     
+
+        }
+        .b1 button{
+      
+        padding-right: 20px;
+        }
+
+        .but button {
+  
+          width: 180%;
+            height: 5vh;
+            background: none;
+              border-radius:3px;
+              justify-content: center;
+              align-items: center;
+          
+            
+            
+             
+        }
+
+        .input-icon1 {
+            background-image: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/icons/person-circle.svg');
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            background-size: 18px;
+            padding-left: 40px;
+            /* space for icon */
+            max-width: 400px;
+        }
+
+        .input-icon2 {
+            background-image: url('https://raw.githubusercontent.com/twbs/icons/main/icons/envelope.svg');
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            background-size: 18px;
+            padding-left: 40px;
+            /* space for icon */
+            max-width: 400px;
+
+
+
+        }
+
+        .input-icon3 {
+            background-image: url('https://raw.githubusercontent.com/twbs/icons/main/icons/lock.svg'
+                );
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            background-size: 18px;
+            padding-left: 40px;
+            /* space for icon */
+            max-width: 400px;
+        }
+
+        .input-icon4 {
+            background-image: url('https://raw.githubusercontent.com/twbs/icons/main/icons/lock.svg'
+                );
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            background-size: 18px;
+            padding-left: 40px;
+            /* space for icon */
+            max-width: 400px;
+
+        }
+
+        .password-wrapper {
+            position: relative;
+            max-width: 400px;
+        }
+
+        .password-wrapper input {
+            width: 100%;
+            padding-right: 40px;
+            /* space for eye */
+        }
+
+        .password-wrapper .eye-icon {
+            position: absolute;
+            right: 12px;
+            top: 45px;
+            transform: translatey(-50%);
+            color: #777;
+            font-size: 18px;
+            pointer-events: none;
+            /* prevents blocking typing */
+        }
+
+        .fourth button {
+            justify-content: center;
+        }
+
+        .second {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .b2 i{
+      color: #1877F2;
+    }
+
+    /* Google Multi-color effect */
+    .b1 i {
+      background: linear-gradient(90deg, #EA4335 25%, #FBBC05 45%, #34A853 65%, #4285F4 85%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .but button:hover{
+
+        background-color: rgb(200, 194, 194);
+    }
+
+    input[type="text"],[type="email"],[type="submit"]{
+       
+        height: 6vh;
+        background-color: #e4dfdf;
+        border-radius: 5px;
+      
+    }
+    .butt button{
+        background-color: #073775;
+        color: white;
+        height: 6vh;
+    }
+       
+    .butt button a{
+        color:white;
+      
+  text-decoration: none;
+
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="first">
+            <img src="sig.jpg" alt="">
+
+            <div class="fi">
+            <h1 class="mb3">Let's Get Started!</h1>
+            <p>created your accound and unlock the <br>full potential of Fragranzia.</p>
+            </div>
+        </div>
+
+        <div class="second">
+
+            <div class="but">
+                <div class="b1">
+                    <button><i class="bi bi-google"></i> Google</button>
+                </div>
+                <div class="b2">
+                    <button><i class="bi bi-facebook"></i> facebook</button>
+                </div>
+            </div>
+            <div class="para pt-4 ps-2">
+                <p>________________ or sign up with email ________________</p>
+            </div>
+            <div class="mb3">
+
+                <form class="p4 w-100">
+                    <div class="mb3">
+                        <label for="user" class="form-label"></label>
+                        <input  type="text" class="form-control input-icon1" placeholder="Enter your username">
+                    </div>
+                    <div class="mb4">
+                        <label for="email" class="form-label"></label>
+                        <input type="email" class="form-control input-icon2" placeholder="Enter your E-mail">
+                    </div>
+                    <div class="mb4 password-wrapper">
+                        <label for="password" class="form-label"></label>
+                        <input type="text" class="form-control input-icon3" placeholder="Enter your password">
+                        <i class="bi bi-eye-slash eye-icon"></i>
+                    </div>
+                    <div class="mb4 password-wrapper">
+                        <label for="cpassword" class="form-label"> </label>
+                        <input type="text" class="form-control input-icon4" placeholder="Confirm your password ">
+                        <i class="bi bi-eye-slash eye-icon"></i>
+                    </div>
+                    <div class="mb3 pt-2 third">
+                        <input type="checkbox" name="checkbox" id="check">
+                        Agree with <a href="#">terms&conditions</a>
+
+                    </div>
+
+                    <div class="mb3 fourth pt-3 butt">
+                        <button type="submit" id="signup"   class="btn  w-100 "><a href="signin.html">Sign up</a></button>
+
+                    </div>
+
+                    <div class="mb5 pt-3 text-center fifth">
+                        <p id="signin">Already have an accound? <a href="signin.html">Sign in</a></p>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+</body>
+
+</html>

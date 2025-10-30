@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+
+     * {
+      margin: 0;
+    }
+    .right, .righta, .rightb {
+  margin-left: 0;
+  width: 60%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+    .top {
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+      box-shadow: 0px 0px 5px #00000040;
+    }
+
+    .topf h3 {
+      margin-right: 390px;
+      font-size: 30px;
+      color: #00354B;
+      letter-spacing: 4%;
+      font-weight: 700;
+
+    }
+
+    .tope {
+      display: flex;
+
+      gap: 20px;
+      padding-bottom: 30px;
+
+
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+      list-style-type: none;
+
+
+      align-items: center;
+
+    }
+
+    li a {
+      text-decoration: none;
+
+      font-weight: 400;
+      color: #000000CC;
+
+
+      text-align: center;
+
+    }
+
+    .home a {
+      color: #00354B;
+
+      font-weight: 600;
+
+
+    }
+
+    .tope button {
+      border-radius: 50px;
+      color: #00354B;
+      background-color: #FFFFFF;
+      width: 200px;
+      padding-right: 50px;
+      margin-top: -5px;
+      height: 5vh;
+      box-shadow: 0px 0px 4px #00000040;
+      border: none;
+    }
+
+    .tope i {
+      color: #000000;
+
+      font-size: 15px;
+      text-shadow: 0 0 1px black;
+    }
+
+    .cart a {
+      display: flex;
+     background: rgba(0, 53, 75, 1);
+
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 4px #00000040;
+      border-radius: 50px;
+      height: 35px;
+      width: 35px;
+      margin-top: -5px;
+    
+
+    }
+    .cart i{
+color: white;
+    }
+
+    .person {
+      display: flex;
+      background-color: #FFFFFF;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 4px #00000040;
+      border-radius: 50px;
+      height: 35px;
+      width: 35px;
+      margin-top: -5px;
+
+    }
+
+    .bell {
+      display: flex;
+      background-color: #FFFFFF;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 4px #00000040;
+      border-radius: 50px;
+      height: 35px;
+      width: 35px;
+      margin-top: -5px;
+
+
+    }
+
+    .lr {
+      display: flex;
+      border-radius: 20px;
+      width: 95%;
+      box-shadow: 0px 0px 4px #00000040;
+      height: 40vh;
+      position: relative;
+      
+
+    }
+    .delete{
+        width: 25%;
+        height: 5vh;
+          border-radius: 3px;
+               background: none;
+               color: red;
+               border: 2px solid red;
+    }
+.buy{
+      width: 25%;
+       height: 5vh;
+         background: rgba(0, 53, 75, 1);
+         color: #FFFFFF;
+         border-radius: 3px;
+}
+.share{
+     width: 25%;
+      height: 5vh;
+      border-radius: 3px;
+      border: 3px solid black;
+      background: none;
+
+}
+.bot{
+    border-radius: 4px;
+      height: 5vh;
+      background: none;
+}
+
+.left img{
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.hf{
+    display: flex;
+  box-shadow: 0px 0px 4px #00000040;
+  width: 60%;
+  border-radius: 4px;
+  margin-top: -30px;
+}
+
+  .right{
+    width: 70%;
+    margin-left:-250px;
+margin-bottom: 20px;
+  }
+  .white img{
+    width: 20%;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  .blue img{
+     width: 10%;
+      margin-left: 20px;
+    margin-top: 30px;
+  }
+   .righta{
+    width: 70%;
+    margin-left:-750px;
+margin-bottom: 20px;
+  }
+   .rightb{
+    width: 70%;
+   margin-left:-1900px;
+margin-bottom: 20px;
+  }
+   .footer{
+  display: flex;
+  gap: 50px;
+  background: rgba(139, 184, 190, 1);
+border-bottom: 2px solid black;
+height: 45vh;
+}
+.f1{
+  display: flex;
+  gap: 80px;
+  width: 40%;
+} 
+
+.footer h2{
+  color: rgba(0, 53, 75, 1);
+  font-weight: 800;
+ padding-top: 90px;
+ width: 60%;
+ padding-left: 50px;
+ 
+
+}
+.footer h5{
+  font-weight: bold;
+  font-size: 20px;
+}
+.footer p{
+  font-weight:400;
+}
+.f5{
+  display: flex;
+   background: rgba(139, 184, 190, 1);
+   gap: 590px;
+   padding-top: 10px;
+   height: 10vh;
+}
+.f6 p{
+  padding-top: 10px;
+}
+
+.hea1{
+    width: 200%;
+    
+}
+  .head{
+    display: flex;
+    
+  }
+  .hd{
+width: 90%;
+margin-top: 20px;
+ box-shadow: 0px 0px 4px #00000040;
+ height: 25%;
+margin-right: 180px;
+padding: 20px;
+
+  }
+  
+    .price{
+        padding-left: 90px;
+    }
+    .dis{
+        padding-left: 120px;
+    }
+    .free{
+        padding-left: 90px;
+    }
+    .amount{
+        padding-left: 80px;
+    }
+    .hb{
+      
+     
+      
+       margin-top: 15px;
+       height: 6vh;
+       width: 90%;
+       margin-left:5px;
+       background: rgba(0, 53, 75, 1);
+       color: #FFFFFF;
+  font-weight: 600;
+
+    }
+   div .sticky {
+  position: sticky;
+ margin-bottom: -200px;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  
+ 
+
+ 
+}
+
+
+    
+</style>
+</head>
+<body>
+     <div class="top">
+
+    <div class="topf">
+      <h3>Fragranzia</h3>
+    </div>
+
+    <div class="tope">
+      <ul>
+        <li class="home"><a href="index.html">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="">Gifting</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+
+      <button><i class="bi bi-search"></i> &nbsp; Search Here </button>
+
+      <div class="cart">
+        <a href="cart.html"><i class="bi bi-cart3"></i></a>
+      </div>
+      <div class="bell">
+        <i class="bi bi-bell"></i>
+      </div>
+      <div class="person">
+        <i class="bi bi-person"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="head">
+
+    <div class="hea1">
+
+    <div class="he p-5">
+        <h3>Cart</h3>
+        <p>Home > Cart</p>
+    </div>
+
+
+     <div class="hf  ms-5 w-75">
+      <div class="left">
+        <img src="red.png" alt="">
+      </div>
+
+      <div class="right mt-2 p-4">
+
+        <h5 class="mb-3">Autograph eau de parfum 100ml for men</h5>
+        
+        <button class="mb-3 bot text-center"><span class="pe-3 fw-bold">-</span><span class=" ps-2">1</span> <span
+            class="ps-4 fw-bold">+</span></button>
+
+        <p><span class="parag pe-2 fw-bold">Rs 899</span> <span class="text-decoration-line-through text-muted">Rs
+            2000</span> <span class="ps-2 text-success text-md fw-bold">61% off</span></p>
+<div class="mt-4 ">
+<button class="delete ">Delete</button>
+<button class="share ms-3">Share</button>
+<button class="buy ms-3">Buy</button>
+</div>
+      </div>
+    </div>
+     <div class="hf  ms-5 mt-3 w-75">
+      <div class="white">
+        <img src="ex4.png" alt="">
+      </div>
+
+      <div class="righta mt-2 p-4 ">
+
+        <h5 class="mb-3">Autograph eau de parfum 100ml for men</h5>
+        
+        <button class="mb-3 bot text-center"><span class="pe-3 fw-bold">-</span><span class=" ps-2">1</span> <span
+            class="ps-4 fw-bold">+</span></button>
+
+        <p><span class="parag pe-2 fw-bold">Rs 899</span> <span class="text-decoration-line-through text-muted">Rs
+            2000</span> <span class="ps-2 text-success text-md fw-bold">61% off</span></p>
+<div class="mt-4 ">
+<button class="delete ">Delete</button>
+<button class="share ms-3">Share</button>
+<button class="buy ms-3">Buy</button>
+</div>
+      </div>
+    </div>
+     <div class="hf  ms-5 mt-3 w-75">
+      <div class="blue">
+        <img src="blue.jpg" alt="">
+      </div>
+
+      <div class="rightb mt-2 p-4">
+
+        <h5 class="mb-3">Autograph eau de parfum 100ml for men</h5>
+        
+        <button class="mb-3 bot text-center"><span class="pe-3 fw-bold">-</span><span class=" ps-2">1</span> <span
+            class="ps-4 fw-bold">+</span></button>
+
+        <p><span class="parag pe-2 fw-bold">Rs 899</span> <span class="text-decoration-line-through text-muted">Rs
+            2000</span> <span class="ps-2 text-success text-md fw-bold">61% off</span></p>
+<div class="mt-4 ">
+<button class="delete ">Delete</button>
+<button class="share ms-3">Share</button>
+<button class="buy ms-3">Buy</button>
+</div>
+      </div>
+    </div>
+    </div>
+
+   
+   
+    <div class="hea2">
+         <div class="sticky">
+        <div class="hd">
+            <h5 class="fw-bold">Check Out</h5>
+            <p class="mt-3"><span >Price (3 item)</span> <strong class="ms-5 price">Rs 3,097</strong></p>
+            <p><span>Discount</span> <strong class="ms-5 dis">Rs 4,404</strong></p>
+            <p><span>Delivery Charge</span> <strong class="ms-5 text-success free">Free</strong></p>
+            <p class="mt-4"><span class="fw-bold">Total Amount</span> <span class="ms-5 fw-bold amount" >Rs 3,493</span></p>
+        </div>
+        
+      
+        
+    
+    <div class="hc">
+        <button class=" hb">Proceed To Buy</button>
+        <p class="mt-4 text-center fw-light">Safe and Secure Payments. Easy <br> returns.100% Authentic products.</p>
+        </div>
+
+    </div>
+    </div>
+    
+    
+  </div>
+  
+
+  <div class="footer mt-5 p-5">
+
+<h2>Fragranzia</h2>
+
+<div class="f1">
+
+  <div class="f2">
+    <h5>pages</h5>
+
+  <p>Home</p>
+  <p>Products</p>
+  <p>Gifting</p>
+  <p>About</p>
+  <p>Profile</p>
+  </div>
+
+   <div class="f3">
+    <h5>Quick Links</h5>
+
+  <p>Privacy Policy</p>
+  <p>Terms and <br>Conditions</p>
+  <p>FAQs</p>
+  <p>Customer <br>Service</p>
+  <p>Profile</p>
+  </div>
+
+  <div class="f4">
+
+    <p><i class="bi bi-envelope"></i> ftrafurniture@gmail.com</p>
+    <p><i class="bi bi-telephone"></i> +91 9876543210</p>
+    <h5>Social Media</h5>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-twitter-x"></i>
+    <i class="bi bi-youtube"></i>
+    <i class="bi bi-linkedin"></i>
+  </div>
+</div>
+
+
+  </div>
+<div class="f5">
+  <ul>
+    <li>Web Accessiblity |</li>
+    <li>Terms Of Use |</li>
+    <li>Privacy statement |</li>
+    <li>Contact Us</li>
+     </ul>
+
+     <div class="f6">
+      <p>© 2024 fragranzia Company. All rights reserved.</p>
+     </div>
+</div>
+
+</body>
+</html>

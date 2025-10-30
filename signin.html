@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <style>
+        .home {
+
+            display: flex;
+        }
+
+       .hfirst img {
+  width: 70%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  height: 60vh;
+  position: relative;
+  filter: brightness(35%); /* makes the image darker, like opacity */
+}
+
+.hfi {
+
+    position: absolute;
+    margin-top:-300px;
+    color: aliceblue;
+    margin-left: 150px;
+    text-align: center;
+    z-index:1;
+   
+}
+
+
+        .hfirst{
+
+          
+            margin-left:290px;
+           margin-top: 100px;
+           
+        }
+        .hsecond{
+            margin-right: 250px;
+            margin-top: 160px;
+            position: relative;
+        }
+
+        .hbut{
+            display: flex;
+       
+   
+            margin-top: 20px;
+           gap:100px;
+           justify-content: center;
+           align-items: center;
+               margin-right: 100px;
+                     
+
+        }
+        .hb1 button{
+      
+        padding-right: 20px;
+        }
+
+        .hbut button {
+  
+          width: 180%;
+            height: 5vh;
+            background: none;
+              border-radius:3px;
+              justify-content: center;
+              align-items: center;
+          
+            
+            
+             
+        }
+
+        .hinput-icon1 {
+            background-image: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/icons/person-circle.svg');
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            background-size: 18px;
+            padding-left: 40px;
+            /* space for icon */
+            max-width: 400px;
+        }
+
+        
+
+        .hinput-icon3 {
+            background-image: url('https://raw.githubusercontent.com/twbs/icons/main/icons/lock.svg'
+                );
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            background-size: 18px;
+            padding-left: 40px;
+            /* space for icon */
+            max-width: 400px;
+        }
+
+        
+
+        .hpassword-wrapper {
+            position: relative;
+            max-width: 400px;
+        }
+
+        .hpassword-wrapper input {
+            width: 100%;
+            padding-right: 40px;
+            /* space for eye */
+        }
+
+        .hpassword-wrapper .eye-icon {
+            position: absolute;
+            right: 12px;
+            top: 45px;
+            transform: translatey(-50%);
+            color: #777;
+            font-size: 18px;
+            pointer-events: none;
+            /* prevents blocking typing */
+        }
+
+        .hfourth button {
+            justify-content: center;
+        }
+
+       
+
+        .hb2 i{
+      color: #1877F2;
+    }
+
+    /* Google Multi-color effect */
+    .hb1 i {
+      background: linear-gradient(90deg, #EA4335 25%, #FBBC05 45%, #34A853 65%, #4285F4 85%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hbut button:hover{
+
+        background-color: rgb(200, 194, 194);
+    }
+     .hbutt button:hover{
+  background-color: #073775;
+    }
+
+
+    input[type="text"],[type="email"],[type="submit"]{
+       
+        height: 6vh;
+        background-color: #e4dfdf;
+        border-radius: 5px;
+      
+    }
+    .hbutt button{
+        background-color: #073775;
+        
+        height: 6vh;
+    }
+        .hbutt a{
+      
+        
+      color: white;
+      text-decoration: none;
+    }
+    .hthird a{
+        margin-left: 180px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+
+        <div class="hfirst">
+            <img src="sp.jpg" alt="">
+
+            <div class="hfi">
+            <h1 class="mb3">Welcome Back</h1>
+            <p>Glad to see you again! Access your <br>account to explore more</p>
+            </div>
+        </div>
+
+        <div class="hsecond">
+
+            <div class="hbut">
+                <div class="hb1">
+                    <button><i class="bi bi-google"></i> Google</button>
+                </div>
+                <div class="hb2">
+                    <button><i class="bi bi-facebook"></i> facebook</button>
+                </div>
+            </div>
+            <div class="hpara pt-4 ps-2">
+                <p>________________ or sign in with email ________________</p>
+            </div>
+            <div class="mb3">
+
+                <form class="p4 w-100">
+                    <div class="mb3">
+                        <label for="user" class="form-label"></label>
+                        <input  type="text" class="form-control hinput-icon1" placeholder="Enter your username">
+                    </div>
+                  
+                    <div class="mb4 hpassword-wrapper">
+                        <label for="password" class="form-label"></label>
+                        <input type="text" class="form-control hinput-icon3" placeholder="Enter your password">
+                        <i class="bi bi-eye-slash eye-icon"></i>
+                    </div>
+                  
+                    <div class="mb3 pt-2 hthird text-center ps-5 ms-5">
+                        <a href="#">Forgot password?</a>
+
+                    </div>  
+
+                    <div class="mb3 hfourth pt-3 hbutt ">
+                        <button ype="submit" class="btn  w-100 "><a href="index.html">Log in</a></button>
+
+                    </div>
+
+                    <div class="mb5 pt-3 text-center hfifth">
+                        <p id="signin">Already have an accound? <a href="signup.html">Sign up</a></p>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+</body>
+
+</html>

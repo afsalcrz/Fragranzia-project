@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <style>
+
+    * {
+      margin: 0;
+    }
+
+    .top {
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+ box-shadow: 0px 0px 5px #00000040;
+    }
+
+    .topf h3 {
+      margin-right: 390px;
+      font-size: 30px;
+      color: #00354B;
+      letter-spacing: 4%;
+      font-weight: 700;
+
+    }
+
+    .tope {
+      display: flex;
+
+      gap: 20px;
+      padding-bottom:30px;
+
+
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+      list-style-type: none;
+
+
+      align-items: center;
+
+    }
+
+    li a {
+      text-decoration: none;
+
+      font-weight: 400;
+      color: #000000CC;
+
+
+      text-align: center;
+
+    }
+
+    .home a {
+      color: #00354B;
+
+      font-weight: 600;
+
+
+    }
+
+    .tope button {
+      border-radius: 50px;
+      color: #00354B;
+      background-color: #FFFFFF;
+      width: 200px;
+      padding-right: 50px;
+      margin-top: -5px;
+      height: 5vh;
+      box-shadow: 0px 0px 4px #00000040;
+      border: none;
+    }
+
+    .tope i {
+      color: #000000;
+
+      font-size: 15px;
+      text-shadow: 0 0 1px black;
+    }
+
+    .cart a {
+      display: flex;
+      background-color: #FFFFFF;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 4px #00000040;
+      border-radius: 50px;
+      height: 35px;
+      width: 35px;
+      margin-top: -5px;
+
+    }
+
+    .person {
+      display: flex;
+      background-color: #FFFFFF;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 4px #00000040;
+      border-radius: 50px;
+      height: 35px;
+      width: 35px;
+      margin-top: -5px;
+
+    }
+
+    .bell {
+      display: flex;
+      background-color: #FFFFFF;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 4px #00000040;
+      border-radius: 50px;
+      height: 35px;
+      width: 35px;
+      margin-top: -5px;
+
+
+    }
+    .p1{
+        margin-top: -80px;
+    }
+    .p1 img{
+        width: 10%;
+        background-color: #FFFFFF;
+        border: none;
+        padding: 3px;
+        border-radius: 2px;
+         box-shadow: 0px 0px 4px #00000040;
+       margin-top: 15px;
+    }
+    
+   
+.purchase{
+    display: flex;
+    margin-left: 150px;
+    margin-top: -350px;
+}
+.p2 img{
+  width: 80%;
+    margin-top: 20px;
+}
+.p3 i{
+ width: 150%;
+ display: flex;
+      background-color: #FFFFFF;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 4px #00000040;
+      border-radius: 50px;
+      height: 35px;
+      width: 35px;
+      margin-top: -5px;
+      margin-left:-150px;
+
+
+}
+.b1{
+background: rgba(0, 53, 75, 1);
+color: white;
+}
+.b2{
+  background: none;
+  font-weight: bold;
+  
+}
+.but{
+
+  width: 200%;
+}
+.lr{
+  display: flex;
+}
+.right{
+ width: 100%;
+  margin-top:-90px;
+}
+.left{
+   width: 100%;
+}
+.bot{
+  width: 15%;
+  height: 5vh;
+  border-radius: 6px;
+  font-weight: bold;
+  background: none;
+}
+
+
+    .c2,
+    .c3,
+    .c4,
+    .c5,
+    .c6 {
+      position: relative;
+      /* keep stars and labels fixed */
+      flex: 0 0 auto;
+      /* prevent shrinking in horizontal scroll */
+      overflow: hidden;
+      /* ensures zoom stays inside */
+      border-radius: 20px;
+    }
+
+
+    .c1 {
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      /* heading left, arrows right */
+      align-items: center;
+      background-color: white;
+      /* optional to overlay on images */
+      padding: 10px 0;
+      z-index: 10;
+    }
+
+    .cicon i {
+      font-size: 30px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    .c1 h4 {
+
+      top: 0;
+      margin-left: 10px;
+
+
+    }
+
+    .coll {
+      display: flex;
+      gap: 50px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding-bottom: 20px;
+    }
+
+    .coll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .red img {
+      width: 100%;
+      background-color: white;
+      border-bottom-right-radius: 90px;
+      border-top-left-radius: 90px;
+      box-shadow: 0px 0px 4px #00000040;
+      height: 40vh;
+      position: relative;
+    }
+
+    .redstar {
+      position: absolute;
+      /* relative to .c2/.c3/.c4 etc. */
+      width: 20%;
+      /* adjust as needed */
+      top: 10px;
+      /* distance from top of image */
+      left: 30px;
+      /* distance from left of image */
+      transform: rotate(-20deg);
+      z-index: 2;
+    }
+
+    .st{
+      position: absolute;
+      /* relative to .c2/.c3/.c4 etc. */
+
+      margin-top: -250px;
+      color: white;
+      margin-left: 30px;
+      display: flex;
+      font-weight: 600;
+      transform: rotate(-40deg);
+      z-index: 2;
+    }
+
+    .para1 {
+      font-weight: 600;
+
+    }
+
+
+    .para3 {
+      text-decoration: line-through;
+      font-size: 15px;
+      padding-left: 10px;
+      color: #979393;
+    }
+
+    .c2 button {
+      width: 100%;
+      height: 5vh;
+      background-color: #00354B;
+      border-radius: 5px;
+
+    }
+
+    .c2 button a {
+
+      text-decoration: none;
+      color: #FFFFFF;
+
+    }
+
+    .para2 strong {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .black img {
+      width: 100%;
+      background-color: white;
+      border-bottom-right-radius: 90px;
+      border-top-left-radius: 90px;
+      box-shadow: 0px 0px 4px #00000040;
+      height: 40vh;
+      position: relative;
+    }
+
+    .c3 button {
+      width: 100%;
+      height: 5vh;
+      background-color: #00354B;
+      border-radius: 5px;
+
+    }
+
+    .c3 button a {
+
+      text-decoration: none;
+      color: #FFFFFF;
+
+    }
+
+    .brown img {
+      width: 100%;
+      background-color: white;
+      border-bottom-right-radius: 90px;
+      border-top-left-radius: 90px;
+      box-shadow: 0px 0px 4px #00000040;
+      height: 40vh;
+      position: relative;
+    }
+
+    .c4 button {
+      width: 100%;
+      height: 5vh;
+      background-color: #00354B;
+      border-radius: 5px;
+
+    }
+
+    .c4 button a {
+
+      text-decoration: none;
+      color: #FFFFFF;
+
+    }
+
+    .blue img {
+      width: 100%;
+      background-color: white;
+      border-bottom-right-radius: 90px;
+      border-top-left-radius: 90px;
+      box-shadow: 0px 0px 4px #00000040;
+      height: 40vh;
+      position: relative;
+    }
+
+    .c5 button {
+      width: 100%;
+      height: 5vh;
+      background-color: #00354B;
+      border-radius: 5px;
+
+    }
+
+    .c5 button a {
+
+      text-decoration: none;
+      color: #FFFFFF;
+
+    }
+
+    .coffee img {
+      width: 100%;
+      background-color: white;
+      border-bottom-right-radius: 90px;
+      border-top-left-radius: 90px;
+      box-shadow: 0px 0px 4px #00000040;
+      height: 40vh;
+      position: relative;
+
+    }
+
+    .c6 button {
+      width: 100%;
+      height: 5vh;
+      background-color: #00354B;
+      border-radius: 5px;
+
+    }
+
+    .c6 button a {
+
+      text-decoration: none;
+      color: #FFFFFF;
+
+    }
+
+    .c6 {
+      margin-right: -8500px;
+    }
+
+    .coll img {
+      transition: border-radius 0.5s, transform 0.5s;
+      /* smooth hover */
+    }
+
+    .coll img:hover {
+      border-top-left-radius: 0;
+      border-top-right-radius: 90px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 90px;
+      transform: scale(1.05);
+      /* optional: slight zoom on hover */
+    }
+
+    .art {
+      font-size: 18px;
+    }
+
+    .new {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-left: 200px;
+      overflow: hidden;
+      width: 70%;
+      border-radius: 10px;
+      gap: 20px;
+    }
+
+    .new img {
+      width: 100%;
+      transition: transform 0.4s ease, width 0.4s ease;
+      filter: brightness(55%);
+      border-radius: 10px;
+      flex: 1;
+      /* Make images flexible inside the container */
+      max-width: 100%;
+    }
+
+    /* Hovered image grows slightly */
+    .new img:hover {
+      transform: scale(1.05);
+      z-index: 1;
+    }
+
+    /* Only images to the right of the hovered image will shrink */
+    .new:hover img {
+      transform: scale(0.95);
+    }
+
+    /* Hovered image overrides the shrink effect */
+    .new img:hover {
+      transform: scale(1.15);
+    }
+    .footer{
+  display: flex;
+  gap: 50px;
+  background: rgba(139, 184, 190, 1);
+border-bottom: 2px solid black;
+height: 45vh;
+}
+.f1{
+  display: flex;
+  gap: 80px;
+  width: 40%;
+} 
+
+.footer h2{
+  color: rgba(0, 53, 75, 1);
+  font-weight: 800;
+ padding-top: 90px;
+ width: 60%;
+ padding-left: 50px;
+ 
+
+}
+.footer h5{
+  font-weight: bold;
+  font-size: 20px;
+}
+.footer p{
+  font-weight:400;
+}
+.f5{
+  display: flex;
+   background: rgba(139, 184, 190, 1);
+   gap: 590px;
+   padding-top: 10px;
+   height: 10vh;
+}
+.f6 p{
+  padding-top: 10px;
+}
+
+   
+
+  </style>
+</head>
+<body>
+     <div class="top">
+
+    <div class="topf">
+      <h3>Fragranzia</h3>
+    </div>
+
+    <div class="tope">
+      <ul>
+        <li class="home"><a href="index.html">Home</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="">Gifting</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+
+      <button><i class="bi bi-search"></i> &nbsp; Search Here </button>
+
+      <div class="cart">
+        <a href="cart.html"><i class="bi bi-cart3"></i></a>
+      </div>
+      <div class="bell">
+        <i class="bi bi-bell"></i>
+      </div>
+      <div class="person">
+        <i class="bi bi-person"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="head mt-2 p-5">
+    <p class="mb-5 fw-light">Home > Products > Kyros Eau De Parfum 100ml for Men</p>
+  </div>
+
+  <div class="lr">
+
+  <div class="left">
+  
+    <div class="p1 p-5">
+        <img src="red.png" alt=""><br>
+        <img src="p1.jpg" alt=""><br>
+        <img src="p2.jpg" alt="">
+    </div>
+
+   <div class="purchase">
+     <div class="p2">
+        <img src="red.png" alt="">
+    </div>
+    <div class="p3 mt-5">
+        <i class="bi bi-suit-heart"></i><br>
+        <i class="bi bi-share"></i>
+    </div>
+ 
+   
+    </div>
+
+    <div class="but">
+     <button class="b1 ms-5 mt-3 w-25 p-2 text-white" onclick="window.location.href='peyment.html'">Add to Cart</button><br>
+     <button class="ms-5 mt-3 w-25 p-2 b2">Add to cart</button>
+
+</div>
+</div>
+
+
+<div class="right">
+
+  <h4>Autograph eau de parfum 100ml for men</h4>
+  <p>Autograph</p>
+  <P><strong>4.5</strong> <i class="bi bi-star-fill pe-2 text-success str"></i> <span class="text-muted">1000 Ratings</span></P>
+  <p class="text-danger">Hurry only few stocks left!</p>
+  <p ><strong class="para pe-2 fw-bold">Rs 899</strong> <span class="text-decoration-line-through text-muted">Rs 2000</span>  <span class="ps-2 text-success text-md fw-bold">61% off</span></p>
+  <button class="mb-3 bot text-center"><span class="pe-3 fw-bold">-</span><span class=" ps-2">1</span> <span class="ps-4 fw-bold">+</span></button>
+  <h5 class="fw-bold">Delivery</h5>
+  <p class="fw-normal">Delivery by 28 Aug, Wednesday | Free <br>if ordered before 9:24 PM</p>
+  <h5 class="fw-bold">Description</h5>
+  <p class="fw-normal">This fragrance exudes a confident and enigmatic personality. Its <br>composition features a top note of lemon and mandarin with a <br>  twist of apple that enhances the freshness. The heart reveals a <br> warm blend of high-grade lavender and a hint of cinnamon,<br> beautifully wrapped in patchouli, musk, and vanilla to ensure a <br>powerful and flowing scent.</p>
+  <h5 class="fw-bold">Available Offers</h5>
+  <p class="fw-normal"><i class="bi bi-tag-fill text-success"></i> Buy two of the same product and get a third one free.</p>
+  <p class="fw-normal"><i class="bi bi-tag-fill text-success"></i> Enjoy free standard shipping on orders exceeding ₹1,399.</p>
+  <p class="fw-normal"><i class="bi bi-tag-fill text-success"></i> Get 15% off your first order </p>
+  <p class="fw-normal"><i class="bi bi-tag-fill text-success"></i> Receive a free tool case with the purchase of any perfumebr<br>over ₹2,000</p>
+  
+</div>
+</div>
+
+<div class="collection mt-5 p-5">
+
+    <div class="c1">
+      <h4>Featured Collections</h4>
+      <div class="cicon">
+        <i class="bi bi-arrow-left-circle"></i>
+        <i class="bi bi-arrow-right-circle"></i>
+      </div>
+    </div>
+
+    <div class="coll">
+
+      <div class="c4 mt-2 p-2">
+        <div class="brown">
+          <img src="brown.jpg" alt="">
+         
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Autograph eau de parfum 100ml <br> for men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button><a href="#">Add to Cart</a></button>
+
+      </div>
+ <div class="c2 mt-2 p-2">
+        <div class="red">
+          <img src="coffee.jpg" alt="">
+         
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Royal eau de parfum 100ml <br>for men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button><a href="#">Add to Cart</a></button>
+
+      </div>
+
+
+     <div class="c5 mt-2 p-2">
+        <div class="blue">
+          <img src="blue.jpg" alt="">
+        
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Royal eau de parfum 100ml <br>for men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button><a href="#">Add to Cart</a></button>
+
+      </div>
+      <div class="c3 mt-2 p-2">
+        <div class="black">
+          <img src="black.jpg" alt="">
+          
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Kyros Eau De Parfum 100ml <br>for Men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button><a href="#">Add to Cart</a></button>
+
+      </div>
+         <div class="c6 mt-2 p-2">
+        <div class="coffee">
+          <img src="red.png" alt="">
+          
+          <p class="st">New</p>
+
+        </div>
+        <p class="mt-2 para1">Autograph eau de parfum 100ml <br> for men</p>
+        <p class="para2 "> <strong>RS 650</strong> <span class="para3">RS 1400</span></p>
+        <button><a href="purchase.html">Add to Cart</a></button>
+
+      </div>
+    </div>
+
+    
+  </div>
+
+  
+  <div class="footer mt-5 p-5">
+
+<h2>Fragranzia</h2>
+
+<div class="f1">
+
+  <div class="f2">
+    <h5>pages</h5>
+
+  <p>Home</p>
+  <p>Products</p>
+  <p>Gifting</p>
+  <p>About</p>
+  <p>Profile</p>
+  </div>
+
+   <div class="f3">
+    <h5>Quick Links</h5>
+
+  <p>Privacy Policy</p>
+  <p>Terms and <br>Conditions</p>
+  <p>FAQs</p>
+  <p>Customer <br>Service</p>
+  <p>Profile</p>
+  </div>
+
+  <div class="f4">
+
+    <p><i class="bi bi-envelope"></i> ftrafurniture@gmail.com</p>
+    <p><i class="bi bi-telephone"></i> +91 9876543210</p>
+    <h5>Social Media</h5>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-twitter-x"></i>
+    <i class="bi bi-youtube"></i>
+    <i class="bi bi-linkedin"></i>
+  </div>
+</div>
+
+
+  </div>
+<div class="f5">
+  <ul>
+    <li>Web Accessiblity |</li>
+    <li>Terms Of Use |</li>
+    <li>Privacy statement |</li>
+    <li>Contact Us</li>
+     </ul>
+
+     <div class="f6">
+      <p>© 2024 fragranzia Company. All rights reserved.</p>
+     </div>
+</div>
+
+</body>
+</html>
