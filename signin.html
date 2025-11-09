@@ -30,7 +30,7 @@
     position: absolute;
     margin-top:-300px;
     color: aliceblue;
-    margin-left: 150px;
+    margin-left: 120px;
     text-align: center;
     z-index:1;
    
@@ -170,6 +170,99 @@
     .hthird a{
        margin-left: 120px;
     }
+    /* ===================== RESPONSIVE ===================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .home {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hfirst {
+    margin: 0;
+    text-align: center;
+  }
+
+  .hfirst img {
+    width: 80%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .hfi {
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    margin-left: 0;
+  }
+
+  .hsecond {
+    margin: 60px auto 0;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .hbut {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hbut button {
+    width: 80%;
+    margin: auto;
+  }
+
+  .hthird a {
+    margin: 0;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .home {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .hfirst img {
+    width: 100%;
+    border-radius: 0;
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  .hfi {
+    font-size: 14px;
+  }
+
+  .hsecond {
+    margin: 30px auto 0;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .hbut {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hbut button {
+    width: 100%;
+  }
+
+  .hthird a {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .hfifth p {
+    font-size: 14px;
+  }
+}
+
+
+    
     </style>
 </head>
 
